@@ -1,0 +1,13 @@
+# temporary folders
+.box/
+.vagrant/
+
+# Oracle Docker images scripts -- from https://github.com/oracle/docker-images/
+/docker-images/
+
+# log files
+**/*.log
+*.log
+
+# large zip files
+*.zip
