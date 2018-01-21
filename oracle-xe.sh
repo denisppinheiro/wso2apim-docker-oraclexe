@@ -3,7 +3,9 @@
 echo "API-M Box: provisioning Oracle XE"
 
 
-if ! [ $(sudo docker inspect oracle-xe) ]; then
+if [ $(sudo docker inspect oracle-xe) ]; then
+    sudo mkdir -p /vagrant/.box/oracle/scripts/setup
+    sudo cp /vagrant/wso2apim-scripts/*.sql /vagrant/.box/oracle/scripts/setup
     sudo docker run -d --name oracle-xe --shm-size=1gb \
         -p 1521:1521 -p 8080:8080 \
         -e ORACLE_PWD=oracle123 \
