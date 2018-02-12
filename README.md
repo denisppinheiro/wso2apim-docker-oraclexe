@@ -1,4 +1,4 @@
-# WSO2 API-M Oracle Database
+# Oracle XE Database for WSO2 API-M and Analytics
 
 WSO2 API-M architecture is quite flexible in the sense we can choose the RDBMS we want to use. The steps to setup an Oracle database is well documented in the [WSO2 documentation](https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases#e3446153ad0044f097f6a643c3f2d0fe), but there still a lack of automated tools to get everything configured and ready to go.  
 
