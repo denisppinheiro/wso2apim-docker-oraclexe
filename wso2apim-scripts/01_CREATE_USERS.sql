@@ -64,4 +64,10 @@ grant create session, create table, create sequence, create trigger to wso2regis
 grant unlimited tablespace to wso2registry;
 grant connect, resource to wso2registry with admin option;
 
+-- GEO_LOCATION_DATA -- wso2geolocation
+create user wso2geolocation identified by wso2geolocation account unlock default tablespace wso2apim_ts temporary tablespace wso2apim_tmp_ts;
+grant create session, create table, create sequence, create trigger to wso2geolocation;
+grant unlimited tablespace to wso2geolocation;
+grant connect, resource to wso2geolocation with admin option;
+
 exit;
